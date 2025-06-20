@@ -34,6 +34,7 @@ configPath = 'yolo-coco\yolov3.cfg'
 print("[INFO] loading YOLO from disk...")
 net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
+
 # load our input image and grab its spatial dimensions
 image = cv2.imread(args["image"])
 (H, W) = image.shape[:2]
